@@ -4,5 +4,7 @@
   :license {:name "MIT"
             :url "http://opensource.org/licenses/MIT"}
   :scm :git
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [clj-http "1.0.1"]])
+  :profiles {:dev {:dependencies [[midje "1.6.3"]]
+                   :plugins [[lein-midje "3.1.3"]]}}
+  :dependencies [[clj-http "1.0.1"]
+                 [org.clojure/clojure "1.6.0"]])
